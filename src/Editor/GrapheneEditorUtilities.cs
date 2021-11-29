@@ -9,7 +9,7 @@ namespace Graphene
   internal static class GrapheneEditorUtilities
   {
     public const string uuid = "com.graphene.core";
-    public const string gitUrlCore = "https://github.com/LudiKha/Graphene.git?path=/src";
+    public const string gitUrlCore = "https://github.com/JBBee/Graphene.git?path=/src";
     public const string gitUrlComponents = "https://github.com/LudiKha/Graphene-Components.git?path=/src";
 
     public class PackageRequest
