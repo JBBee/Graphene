@@ -66,8 +66,10 @@ namespace Graphene.Elements
       m_Background.AddManipulator(new Clickable(OnClickBackground));
 
       // Add background to root
-      panel.TopRoot().Add(m_Background);
-      //panel.visualTree.Add(m_Background);
+      if (panel?.TopRoot() == null)
+          panel?.visualTree?.Add(m_Background);
+      else
+        panel?.TopRoot()?.Add(m_Background);
       
       // Add dialog to background
       m_Background.Add(this);
